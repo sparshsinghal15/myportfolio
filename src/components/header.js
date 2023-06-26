@@ -20,7 +20,7 @@ const Header = () => {
           </a>
         </div>
         <Link to={PAGE_URL.CONNECT}>
-          <div className="custom-button">Get in touch</div>
+          <div className="custom-button custom-button-white">Get in touch</div>
         </Link>
       </div>
     </div>

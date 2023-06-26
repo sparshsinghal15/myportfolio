@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./header";
-import About from "./about";
-import Connect from "./connect";
+import About from "./aboutPage";
+import Connect from "./connectPage";
 import Footer from "./footer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";

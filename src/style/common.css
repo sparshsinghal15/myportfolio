@@ -1,6 +1,7 @@
 .container {
-    width: 75%;
-    margin: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 /* Horizontal align */
 .text-center {
@@ -49,6 +50,9 @@
 .pt-4 {
     padding-top: calc(var(--spacer) * 2);
 }
+.pb-4 {
+    padding-top: calc(var(--spacer) * 2);
+}
 /* Margin */
 .my-5 {
     margin-top: calc(var(--spacer) * 3);
@@ -67,26 +71,42 @@
 .mt-5 {
     margin-top: calc(var(--spacer) * 3);
 }
+.mb-5 {
+    margin-bottom: calc(var(--spacer) * 3);
+}
 /* Cursor */
 .cursor-pointer {
     cursor: pointer;
 }
 /* Headings */
 .title-1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
 }
 .title-2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.title-3 {
     font-size: 40px;
     font-weight: 700;
+}
+.heading-1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.heading-2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(210, 208, 208);
+    margin-bottom: 20px;
 }
 /* custom button */
 .custom-button {
     display: inline;
-    color: black;
     font-weight: 600;
     font-size: 15px;
-    background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -96,7 +116,21 @@
     transition: all 0.2s;
 }
 .custom-button:hover {
+    transition: all 0.2s;
+}
+.custom-button-white {
+    background-color: white;
+    color: black;
+}
+.custom-button-white:hover {
     background-color: var(--blue);
     color: white;
-    transition: all 0.2s;
+}
+.custom-button-blue {
+    background-color: var(--blue);
+    color: white;
+}
+.custom-button-blue:hover {
+    background-color: white;
+    color: black;
 }
