@@ -15,9 +15,15 @@
 .position-relative {
     position: relative;
 }
+.d-block {
+    display: block !important;
+}
 /* Flex */
 .flex {
     display: flex;
+}
+.flex-direction-row {
+    flex-direction: row;
 }
 .justify-space-between {
     justify-content: space-between;
@@ -78,6 +84,9 @@
 .mb-5 {
     margin-bottom: calc(var(--spacer) * 3);
 }
+.ml-2 {
+    margin-left: calc(var(--spacer) * 1);
+}
 /* Cursor */
 .cursor-pointer {
     cursor: pointer;
@@ -108,7 +117,7 @@
 }
 /* custom button */
 .custom-button {
-    display: inline;
+    display: inline-block;
     font-weight: 600;
     font-size: 15px;
     padding-top: 10px;

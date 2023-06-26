@@ -7,7 +7,7 @@ import { CSSTransition } from "react-transition-group";
 import "../../style/fade.css";
 
 const Section = ({ section }) => {
-  const { title, description, image } = section;
+  const { title, description, image, resumeBtn } = section;
 
   const nodeRef = useRef(null);
 
@@ -21,10 +21,9 @@ const Section = ({ section }) => {
           </Col>
           <Col span={12}>
             <div className="heading-2">{description}</div>
-            <div className="text-center">
-              <div className="custom-button custom-button-blue button">
-                Show More
-              </div>
+            <div className="action-buttons flex text-center">
+              <div className="custom-button custom-button-blue">Show More</div>
+              <div className="ml-2">{resumeBtn}</div>
             </div>
           </Col>
         </Row>
