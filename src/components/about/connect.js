@@ -9,7 +9,7 @@ const Connect = () => {
       <div className="title-2">great together!</div>
       <div className="mt-5">
         <Link to={PAGE_URL.CONNECT}>
-          <div className="custom-button custom-button-white button">
+          <div className="custom-button custom-button-blue button">
             Get in touch
           </div>
         </Link>

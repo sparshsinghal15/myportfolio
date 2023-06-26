@@ -11,9 +11,10 @@ const About = () => {
       <Introduction />
       <div className="sections">
         {SECTIONS.map((section, index) => (
-          <Section section={section} />
+          <Section section={section} index={index} />
         ))}
       </div>
+      <div className="sections">A few cool things about me...</div>
       <Connect />
     </div>
   );

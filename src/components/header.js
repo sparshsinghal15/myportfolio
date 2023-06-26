@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="header py-4">
+    <div className="header py-5">
       <div className="container flex justify-space-between align-center">
         <Link to={PAGE_URL.ABOUT}>
           <div className="title">Sparsh Singhal</div>
