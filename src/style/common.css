@@ -10,6 +10,10 @@
 .align-center {
     align-items: center;
 }
+/* display */
+.position-relative {
+    position: relative;
+}
 /* Flex */
 .flex {
     display: flex;
@@ -39,17 +43,30 @@
     padding-top: calc(var(--spacer) * 2);
     padding-bottom: calc(var(--spacer) * 2);
 }
+.pt-1 {
+    padding-top: calc(var(--spacer) * 0.5);
+}
+.pt-4 {
+    padding-top: calc(var(--spacer) * 2);
+}
+/* Margin */
+.mt-4 {
+    margin-top: calc(var(--spacer) * 2);
+}
+.mt-5 {
+    margin-top: calc(var(--spacer) * 3);
+}
 /* Cursor */
 .cursor-pointer {
     cursor: pointer;
 }
 /* Headings */
 .title-1 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
 }
 .title-2 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
 }
 /* custom button */
@@ -66,9 +83,9 @@
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s;
-  }
-  .custom-button:hover {
+}
+.custom-button:hover {
     background-color: rgb(3, 45, 170);
     color: white;
     transition: all 0.2s;
-  }
+}
