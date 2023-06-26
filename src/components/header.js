@@ -16,7 +16,7 @@ const Header = ({ setPage }) => {
             <div className="button">Blog</div>
           </a>
         </div>
-        <div className="connect">Get in touch</div>
+        <div className="custom-button">Get in touch</div>
       </div>
     </div>
   );

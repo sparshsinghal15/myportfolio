@@ -44,7 +44,31 @@
     cursor: pointer;
 }
 /* Headings */
-.heading-1 {
+.title-1 {
     font-size: 40px;
     font-weight: 700;
 }
+.title-2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+/* custom button */
+.custom-button {
+    display: inline;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .custom-button:hover {
+    background-color: rgb(3, 45, 170);
+    color: white;
+    transition: all 0.2s;
+  }
