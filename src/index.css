@@ -8,8 +8,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   --spacer: 10px;
-  /* background-image: linear-gradient(to bottom, rgb(0, 8, 61), rgb(0, 1, 10)); */
-  background-color: rgb(0, 0, 12);
+
+  /* Colors */
+  --blue: rgb(3, 45, 170);;
+  background-image: linear-gradient(rgb(0, 8, 61) 10%, rgb(0, 1, 10) 90%);
+  /* background-color: rgb(0, 0, 12); */
   height: 100%;
 }
 
@@ -17,3 +20,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5f5f5f;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }

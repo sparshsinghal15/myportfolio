@@ -4,17 +4,20 @@ import About from "./about";
 import Connect from "./connect";
 import Footer from "./footer";
 
-import { PAGE_ENUM } from "../constants/constants";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Main = () => {
-  const [page, setPage] = useState(0);
-
   return (
-    <div>
-      <Header setPage={setPage} />
-      <div className="container content">
-        {page === PAGE_ENUM.ABOUT ? <About /> : <Connect />}
-      </div>
+    <div className="main">
+      <BrowserRouter>
+        <Header />
+        <div className="container content">
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/connect" element={<Connect />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
       <Footer />
     </div>
   );

@@ -1,9 +1,15 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .header {
-  background-color: rgba(0, 0, 0, 0.651);
+  background-color: rgba(0, 0, 0, 0.591);
   position: fixed;
   top: 0;
   width: 100%;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(25px);
   justify-content: center;
   border-bottom: 0.2px solid rgba(255, 255, 255, 0.116);
 
@@ -49,10 +55,16 @@
 }
 
 .footer {
-  position: absolute;
+  margin-top: auto;
   width: 100%;
-  bottom: 0;
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: black;
+
+  a {
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }

@@ -1,22 +1,27 @@
 import React from "react";
 
-import { PAGE_ENUM } from "../constants/constants";
-import { BLOG_URL } from "../constants/urls";
+import { BLOG_URL, PAGE_URL } from "../constants/urls";
 
-const Header = ({ setPage }) => {
+import { Link } from "react-router-dom";
+
+const Header = () => {
   return (
     <div className="header py-4">
       <div className="container flex justify-space-between align-center">
-        <div className="title">Sparsh Singhal</div>
+        <Link to={PAGE_URL.ABOUT}>
+          <div className="title">Sparsh Singhal</div>
+        </Link>
         <div className="action flex">
-          <div className="button" onClick={() => setPage(PAGE_ENUM.ABOUT)}>
-            About
-          </div>
+          <Link to={PAGE_URL.ABOUT}>
+            <div className="button">About</div>
+          </Link>
           <a href={BLOG_URL} target="_blank">
             <div className="button">Blog</div>
           </a>
         </div>
-        <div className="custom-button">Get in touch</div>
+        <Link to={PAGE_URL.CONNECT}>
+          <div className="custom-button">Get in touch</div>
+        </Link>
       </div>
     </div>
   );

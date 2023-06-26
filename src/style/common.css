@@ -50,6 +50,17 @@
     padding-top: calc(var(--spacer) * 2);
 }
 /* Margin */
+.my-5 {
+    margin-top: calc(var(--spacer) * 3);
+    margin-bottom: calc(var(--spacer) * 3);
+}
+.my-10 {
+    margin-top: calc(var(--spacer) * 5);
+    margin-bottom: calc(var(--spacer) * 5);
+}
+.mt-3 {
+    margin-top: calc(var(--spacer) * 1.5);
+}
 .mt-4 {
     margin-top: calc(var(--spacer) * 2);
 }
@@ -85,7 +96,7 @@
     transition: all 0.2s;
 }
 .custom-button:hover {
-    background-color: rgb(3, 45, 170);
+    background-color: var(--blue);
     color: white;
     transition: all 0.2s;
 }
