@@ -17,7 +17,7 @@ export const PROFESSIONS = [
   "Blogger",
 ];
 
-export const SECTIONS = [
+export const SECTIONS_PROFESSION = [
   {
     title: "Software Development",
     description: "I have worked on ",
@@ -42,6 +42,10 @@ export const SECTIONS = [
     image: Blog,
     resumeBtn: null,
   },
+];
+
+export const SECTIONS_EDUCATION = [
+  { title: "Indian Institute of Technology, Kanpur" },
 ];
 
 export const SOCIAL_MEDIA_ICONS = [
