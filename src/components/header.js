@@ -1,6 +1,7 @@
 import React from "react";
 
-import { BLOG_URL, PAGE_URL } from "../constants/urls";
+import { BLOG_URL } from "../constants/data";
+import { PAGE_URL } from "../constants/urls";
 
 import { Link } from "react-router-dom";
 

@@ -8,8 +8,10 @@ const Footer = () => {
     <div className="footer">
       <div className="container text-center">
         <div className="social-media">
-          {SOCIAL_MEDIA_ICONS.map((item) => (
-            <a href={item.url}>{item.icon}</a>
+          {SOCIAL_MEDIA_ICONS.map((item, index) => (
+            <a href={item.url} key={index}>
+              {item.icon}
+            </a>
           ))}
         </div>
         <div>Designed and developed by {NAME}</div>

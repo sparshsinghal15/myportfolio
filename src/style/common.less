@@ -81,6 +81,9 @@
 .mt-5 {
     margin-top: calc(var(--spacer) * 3);
 }
+.mb-4 {
+    margin-bottom: calc(var(--spacer) * 2);
+}
 .mb-5 {
     margin-bottom: calc(var(--spacer) * 3);
 }
@@ -110,11 +113,18 @@
     margin-bottom: 20px;
 }
 .heading-2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(210, 208, 208);
+    margin-bottom: 20px;
+}
+.heading-3 {
     font-size: 20px;
     font-weight: 400;
     color: rgb(210, 208, 208);
     margin-bottom: 20px;
 }
+/* Custom Features */
 /* custom button */
 .custom-button {
     display: inline-block;
@@ -146,4 +156,32 @@
 .custom-button-blue:hover {
     background-color: white;
     color: black;
+}
+.custom-button-white-ghost {
+    transform: scale(0.95);
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.custom-button-white-ghost:hover {
+    background-color: white;
+    color: black;
+}
+/* custom modal */
+.custom-modal .ant-modal-content  {
+    background-color: rgba(0, 0, 0, 0.795) !important;
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    font-size: 100px;
+    backdrop-filter: blur(25px);
+    padding: 25px 40px;
+    .ant-modal-close {
+        color: white;
+    }
+    .action-buttons {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
 }

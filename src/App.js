@@ -1,5 +1,5 @@
 import "./style/app.less";
-import "./style/common.css";
+import "./style/common.less";
 import Main from "./components/main";
 
 function App() {
