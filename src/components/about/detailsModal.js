@@ -1,7 +1,11 @@
 import Modal from "antd/es/modal";
 import React from "react";
 
-const Details = ({ section, detailsModalVisible, setDetailsModalVisible }) => {
+const DetailsModal = ({
+  section,
+  detailsModalVisible,
+  setDetailsModalVisible,
+}) => {
   const closeModal = () => {
     setDetailsModalVisible(false);
   };
@@ -14,10 +18,13 @@ const Details = ({ section, detailsModalVisible, setDetailsModalVisible }) => {
       onCancel={closeModal}
       open={detailsModalVisible}
       footer={false}
-      width="70%"
+      width="65%"
     >
       <div className="heading-2">{section.title}</div>
-
+      <div className="heading-3 modal-content">
+        {section.details &&
+          section.details.map((paragraph) => <p>{paragraph.text}</p>)}
+      </div>
       <div className="action-buttons mb-4">
         <div
           className="custom-button custom-button-white-ghost"
@@ -31,4 +38,4 @@ const Details = ({ section, detailsModalVisible, setDetailsModalVisible }) => {
   );
 };
 
-export default Details;
+export default DetailsModal;

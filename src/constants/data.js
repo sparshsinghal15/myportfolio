@@ -25,6 +25,7 @@ export const PROFESSIONS = [
   "Blogger",
 ];
 
+// Make sure the enum values are starting from 0 and increasing continuously
 export const SECTIONS_ENUM = {
   PROFESSIONS: 1,
   EDUCATION: 0,
@@ -35,31 +36,31 @@ export const SECTIONS = {
   [SECTIONS_ENUM.PROFESSIONS]: [
     {
       title: "Software Development",
-      description: "I have worked on ",
+      description: "",
       image: SoftwareDevelopment,
       resumeBtn: <DownloadResumeButton src={ResumeSoftware} />,
-      details: { name: "hello" },
+      details: null,
     },
     {
       title: "Business Analytics",
-      description: "I have worked on this this ",
+      description: "",
       image: BusinessAnalytics,
       resumeBtn: null,
-      details: {},
+      details: null,
     },
     {
       title: "Youtube",
-      description: "I have worked on this this ",
+      description: "",
       image: Youtube,
       resumeBtn: null,
-      details: {},
+      details: null,
     },
     {
       title: "Blog",
-      description: "I have worked on this this ",
+      description: "",
       image: Blog,
       resumeBtn: null,
-      details: {},
+      details: null,
     },
   ],
   [SECTIONS_ENUM.EDUCATION]: [
@@ -69,71 +70,37 @@ export const SECTIONS = {
         "During my time at the prestigious Indian Institute of Technology (IIT) Kanpur, I pursued a Bachelor of Technology (B.Tech) degree, majoring in Chemical Engineering. Alongside my major, I also chose to broaden my knowledge and skills by completing minors in both Computer Science and Industrial and Management Engineering.",
       image: IITKanpur,
       resumeBtn: null,
-      details: { name: "hello" },
+      details: null,
     },
   ],
   [SECTIONS_ENUM.EXTRAS]: [
     {
       title: "A litte more about me...",
-      description: "I have worked on ",
+      description:
+        "Let me give you a glimpse into my life outside of professional life. Music holds a special place in my heart, and I enjoy expressing myself through singing and playing instruments such as the piano and flute. I have a deep love for reading as well, where I find solace and inspiration within the pages of both fiction and non-fiction books. Additionally, I have a keen interest in language learning, and I am currently immersed in the captivating journey of mastering the Spanish language. These hobbies provide me with creative outlets, opportunities for personal growth, and a broader understanding of the world around me.",
       image: Book,
       resumeBtn: null,
-      details: { name: "hello" },
+      details: [
+        {
+          text: "Books have always been a cherished part of my life. Whether I'm curling up with a fantasy novel, delving into the depths of historical accounts, or expanding my knowledge through thought-provoking non-fiction, I find immense joy and enrichment in the written word. The ability of authors to craft compelling narratives, evoke emotions, and share profound insights never fails to captivate me.",
+          image: null,
+        },
+        {
+          text: "Music, too, plays a significant role in shaping my identity. Singing has been a form of self-expression for as long as I can remember. The power of a well-delivered melody or a heartfelt lyric resonates deeply within me. Additionally, my instrumental skills on the piano and flute allow me to explore different genres and experiment with creating my own compositions.",
+          image: null,
+        },
+        {
+          text: "In my pursuit of cultural understanding and personal growth, I have embarked on a journey of language learning. Currently, I am dedicated to mastering the Spanish language. This endeavor not only provides me with the ability to communicate with a wider range of individuals but also grants me a glimpse into the rich tapestry of Spanish-speaking cultures. It is a constant reminder that language is a gateway to diverse perspectives, connecting people across geographical boundaries.",
+          image: null,
+        },
+        {
+          text: "Through this website, I aim to share my passion for reading, music, and language learning. Join me as I delve into literary adventures, share melodic creations, and document my linguistic progress. Together, let's explore the world of words, melodies, and cultural exchanges. Thank you for taking the time to learn more about my hobbies and interests. I invite you to connect with me and share your own experiences and passions. Let's embark on a journey of discovery and inspiration together!",
+          image: null,
+        },
+      ],
     },
   ],
 };
-
-export const SECTIONS_PROFESSION = [
-  {
-    title: "Software Development",
-    description: "I have worked on ",
-    image: SoftwareDevelopment,
-    resumeBtn: <DownloadResumeButton src={ResumeSoftware} />,
-    details: { name: "hello" },
-  },
-  {
-    title: "Business Analytics",
-    description: "I have worked on this this ",
-    image: BusinessAnalytics,
-    resumeBtn: null,
-    details: {},
-  },
-  {
-    title: "Youtube",
-    description: "I have worked on this this ",
-    image: Youtube,
-    resumeBtn: null,
-    details: {},
-  },
-  {
-    title: "Blog",
-    description: "I have worked on this this ",
-    image: Blog,
-    resumeBtn: null,
-    details: {},
-  },
-];
-
-export const SECTIONS_EDUCATION = [
-  {
-    title: "Indian Institute of Technology, Kanpur",
-    description:
-      "During my time at the prestigious Indian Institute of Technology (IIT) Kanpur, I pursued a Bachelor of Technology (B.Tech) degree, majoring in Chemical Engineering. Alongside my major, I also chose to broaden my knowledge and skills by completing minors in both Computer Science and Industrial and Management Engineering.",
-    image: IITKanpur,
-    resumeBtn: null,
-    details: { name: "hello" },
-  },
-];
-
-export const SECTIONS_EXTRAS = [
-  {
-    title: "A litte more about me...",
-    description: "I have worked on ",
-    image: Book,
-    resumeBtn: null,
-    details: { name: "hello" },
-  },
-];
 
 export const SOCIAL_MEDIA_ICONS = [
   { title: "LinkedIn", url: LINKEDIN_URL, icon: <FaLinkedin /> },
