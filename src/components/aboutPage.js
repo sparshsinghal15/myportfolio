@@ -4,8 +4,10 @@ import Connect from "./about/connect";
 import Section from "./about/section";
 
 import {
+  SECTIONS,
   SECTIONS_EDUCATION,
   SECTIONS_ENUM,
+  SECTIONS_EXTRAS,
   SECTIONS_PROFESSION,
 } from "../constants/data";
 import Details from "./about/details";
@@ -13,48 +15,32 @@ import Details from "./about/details";
 const About = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
   const [sectionEnumValue, setSectionEnumValue] = useState(0);
-  const [detailsModalVisible, setDetailsModalVisible] = useState(true);
+  const [detailsModalVisible, setDetailsModalVisible] = useState(false);
 
   return (
     <div className="about heading-1">
       <Introduction />
       {/* Education */}
-      <div className="sections">
-        {SECTIONS_EDUCATION.map((section, index) => (
-          <Section
-            section={section}
-            index={index}
-            setSectionIndex={setSectionIndex}
-            setDetailsModalVisible={setDetailsModalVisible}
-            sectionEnumValue={SECTIONS_ENUM.EDUCATION}
-            setSectionEnumValue={setSectionEnumValue}
-          />
-        ))}
-      </div>
-      {/* Profession */}
-      <div className="sections">
-        {SECTIONS_PROFESSION.map((section, index) => (
-          <Section
-            section={section}
-            index={index}
-            setSectionIndex={setSectionIndex}
-            setDetailsModalVisible={setDetailsModalVisible}
-            sectionEnumValue={SECTIONS_ENUM.PROFESSIONS}
-            setSectionEnumValue={setSectionEnumValue}
-          />
-        ))}
-      </div>
-      {/* Cool things */}
-      <div className="sections">A few cool things about me...</div>
+
+      {Object.keys(SECTIONS_ENUM).map((item, sectionInd) => (
+        <div className="sections">
+          {SECTIONS[sectionInd].map((section, itemInd) => (
+            <Section
+              section={section}
+              index={itemInd}
+              setSectionIndex={setSectionIndex}
+              setDetailsModalVisible={setDetailsModalVisible}
+              sectionEnumValue={sectionInd}
+              setSectionEnumValue={setSectionEnumValue}
+            />
+          ))}
+        </div>
+      ))}
       <Connect />
 
       {/* Modals */}
       <Details
-        section={
-          sectionEnumValue === SECTIONS_ENUM.PROFESSIONS
-            ? SECTIONS_PROFESSION[sectionIndex]
-            : SECTIONS_EDUCATION[sectionIndex]
-        }
+        section={SECTIONS[sectionEnumValue][sectionIndex]}
         detailsModalVisible={detailsModalVisible}
         setDetailsModalVisible={setDetailsModalVisible}
       />

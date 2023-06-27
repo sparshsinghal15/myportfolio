@@ -21,7 +21,7 @@ const Section = ({
 
   return (
     <div className="section" key={index}>
-      <div className="heading-1 mb-5">{title}</div>
+      <div className="heading-1">{title}</div>
       <Row gutter={[24, 8]}>
         <Col span={12}>
           <img src={image} />
