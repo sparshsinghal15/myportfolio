@@ -5,6 +5,7 @@ import Section from "./about/section";
 
 import { SECTIONS, SECTIONS_ENUM } from "../constants/data";
 import DetailsModal from "./about/detailsModal";
+import { SCROLL_THRESHOLD } from "../constants/constants";
 
 const About = () => {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -13,7 +14,7 @@ const About = () => {
 
   useEffect(() => {
     const faders = document.querySelectorAll(".fade-in-section");
-    const appearOptions = { threshold: 0.1 };
+    const appearOptions = { threshold: SCROLL_THRESHOLD };
     const appearOnScroll = new IntersectionObserver(
       (entries, appearOnScroll) => {
         entries.forEach((entry) => {

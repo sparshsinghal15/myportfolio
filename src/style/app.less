@@ -5,13 +5,11 @@
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.591);
   position: fixed;
   top: 0;
   width: 100%;
   backdrop-filter: blur(25px);
   justify-content: center;
-  border-bottom: 0.2px solid rgba(255, 255, 255, 0.116);
   z-index: 1;
 
   .title {
@@ -35,6 +33,15 @@
     color: rgb(194, 194, 194);
     transition: all 0.2s;
   }
+}
+.transparent-header {
+  background-color: transparent !important;
+  transition: all 0.1s;
+}
+.scrolled-header {
+  background-color: rgba(0, 0, 0, 0.591);
+  border-bottom: 0.2px solid rgba(255, 255, 255, 0.116);
+  transition: all 0.1s;
 }
 
 .content {

@@ -5,9 +5,22 @@ import { PAGE_URL } from "../constants/urls";
 
 import { Link } from "react-router-dom";
 
+window.addEventListener("scroll", function () {
+  let header = document.getElementById("header");
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > 0) {
+    header.classList.remove("transparent-header");
+    header.classList.add("scrolled-header");
+  } else {
+    header.classList.remove("scrolled-header");
+    header.classList.add("transparent-header");
+  }
+});
+
 const Header = () => {
   return (
-    <div className="header py-5">
+    <div id="header" className="header transparent py-5">
       <div className="container flex justify-space-between align-center">
         <Link to={PAGE_URL.ABOUT}>
           <div className="title">Sparsh Singhal</div>
