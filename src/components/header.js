@@ -21,21 +21,25 @@ window.addEventListener("scroll", function () {
 const Header = () => {
   return (
     <div id="header" className="header transparent py-5">
-      <div className="container flex justify-space-between align-center">
-        <Link to={PAGE_URL.ABOUT}>
-          <div className="title">Sparsh Singhal</div>
-        </Link>
-        <div className="action flex">
+      <div className="container">
+        <div className="sub-container flex align-center justify-space-between">
           <Link to={PAGE_URL.ABOUT}>
-            <div className="button">About</div>
+            <div className="title">Sparsh Singhal</div>
           </Link>
-          <a href={BLOG_URL} target="_blank">
-            <div className="button">Blog</div>
-          </a>
+          <div className="action flex">
+            <Link to={PAGE_URL.ABOUT}>
+              <div className="button">About</div>
+            </Link>
+            <a href={BLOG_URL} target="_blank">
+              <div className="button">Blog</div>
+            </a>
+          </div>
+          <Link to={PAGE_URL.CONNECT}>
+            <div className="custom-button custom-button-white">
+              Get in touch
+            </div>
+          </Link>
         </div>
-        <Link to={PAGE_URL.CONNECT}>
-          <div className="custom-button custom-button-white">Get in touch</div>
-        </Link>
       </div>
     </div>
   );

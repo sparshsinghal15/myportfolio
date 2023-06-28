@@ -23,12 +23,12 @@ const Section = ({
     <div className="section fade-in-section" key={index}>
       <div className="heading-1">{title}</div>
       <Row gutter={[24, 8]}>
-        <Col span={12}>
+        <Col lg={12} sm={24}>
           <img src={image} />
         </Col>
-        <Col span={12}>
+        <Col className="description" lg={12} sm={24}>
           <div className="heading-3">{description}</div>
-          <div className="action-buttons flex text-center">
+          <div className="action-buttons">
             {section.details && (
               <div
                 className="custom-button custom-button-white-ghost"

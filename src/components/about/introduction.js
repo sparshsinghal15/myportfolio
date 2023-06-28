@@ -3,7 +3,7 @@ import Profession from "./introduction/profession";
 
 const Introduction = () => {
   return (
-    <div className="introduction align-center flex">
+    <div className="introduction flex">
       <div className="description">
         <div className="title-1">
           Hi, I'm <span className="name">Sparsh Singhal</span>
